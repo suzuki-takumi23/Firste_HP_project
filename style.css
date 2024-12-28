@@ -15,6 +15,24 @@ header h1{
     margin-left: 100px;
 }
 
+ul{
+    list-style: none;
+    display: flex;
+    padding-top: 30px;
+    background-color:rgb(135, 159, 204)
+}
+
+li a {
+    margin-left: 35px;
+    color:black;
+    text-decoration: none;
+}
+
+li a:hover {
+    text-decoration: underline;
+    color: rgb(86, 52, 36);
+}
+
 /* main */
 main{
     background-color: rgb(236, 255, 255);
