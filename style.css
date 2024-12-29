@@ -77,6 +77,15 @@ li a:hover {
     color: rgb(86, 52, 36);
 }
 
+.compatible-area {
+    text-align: center;
+}
+
+.compatible-area img {
+    width: 500px;
+    height: 500px; 
+}
+
 
 /* price_list main */
 main{
