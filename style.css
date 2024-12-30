@@ -1,14 +1,25 @@
 @charset "utf-8";
 
 /* 共通部分 */
+.contents {
+    overflow: auto;
+    margin-top: 150px;
+}
 
 
 /* header */
 header{
     height: 150px;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+
 }
 header h1{
-    display: flex;
+    display: sticky;
     align-items: center;
     width: 100%;
     height: 100%;
@@ -34,6 +45,7 @@ li a:hover {
 }
 
 /* index main */
+/* description */
 .super-description {
     position: relative;
     width: 100%;
@@ -59,17 +71,20 @@ li a:hover {
 .description h3 {
     color: rgb(150, 150, 255);
     text-shadow: rgb(20, 20, 20) 0px 0px 3px;
+    font-size: 30px;
 }
 
 .description p {
     color: rgb(150, 150, 255);
     text-shadow: rgb(20, 20, 20) 0px 0px 3px;
+    font-size: 30px;
 }
 
 .description a {
     color: rgb(150, 150, 255);
     text-shadow: rgb(20, 20, 20) 0px 0px 3px;
     text-decoration: none;
+    font-size: 30px;
 }
 
 .description a:hover {
@@ -77,15 +92,26 @@ li a:hover {
     color: rgb(86, 52, 36);
 }
 
+/* compatible-area */
+
 .compatible-area {
     text-align: center;
+    margin-top: 30px;
 }
 
 .compatible-area img {
-    width: 500px;
-    height: 500px; 
+    width: 400px;
+    height: 400px; 
 }
 
+.compatible-area h3 {
+    font-size: 25px;
+    margin: 18px;
+}
+
+.compatible-area p {
+    margin-top: 14px;
+}
 
 /* price_list main */
 main{
@@ -149,11 +175,11 @@ tbody tr:nth-of-type(even){
 footer{
     padding: 50px 0;
     background-color: rgb(134, 165, 168);
+    text-align: center;
 }
 footer h3, footer p{
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 100%;
     height: 100%;
     margin: 20px auto;
