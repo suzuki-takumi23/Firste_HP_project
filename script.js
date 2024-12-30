@@ -33,3 +33,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
     setInterval(switchBackgrounds, 8000);
 });
+
+const image = document.getElementById("fade");
+
+const options = {
+    threshold: 0.5,
+};
+
+function showImage(entries) {
+    if(entries[0].isIntersecting) {
+        image.style.opacity = 1;
+    }
+}
+
+const observer = new IntersectionObserver(showImage, options);
+
+observer.observe(image);

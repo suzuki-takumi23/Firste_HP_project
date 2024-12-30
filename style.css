@@ -7,6 +7,7 @@
 }
 
 
+
 /* header */
 header{
     height: 150px;
@@ -96,21 +97,45 @@ li a:hover {
 
 .compatible-area {
     text-align: center;
-    margin-top: 30px;
+    margin: 50px;
+    background-color: rgb(200, 250, 255);
+    height: 1000px;
+    box-shadow: 0px, 0px, 3px, 3px, #06060639;
 }
 
-.compatible-area img {
+.image {
     width: 400px;
     height: 400px; 
+    margin-left: 55px;
+}
+
+#fade {
+    opacity: 0;
+    transition: 4s;
 }
 
 .compatible-area h3 {
+    padding-top: 60px;
     font-size: 25px;
     margin: 18px;
 }
 
 .compatible-area p {
     margin-top: 14px;
+    margin-bottom: 60px;
+}
+
+.compatible-area a {
+    color: black;
+    text-decoration: none;
+}
+
+.compatible-area a:hover {
+    color: rgb(50, 50, 50)
+}
+
+.compatible-area .imgs {
+    display: flex;
 }
 
 /* price_list main */
