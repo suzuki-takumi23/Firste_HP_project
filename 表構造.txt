@@ -1,0 +1,17 @@
+表構造
+
+
+
+privacy表
+	seqno列 number(4) 一意キー <-　順序prseq start 1001 
+	name列 varchar2(20) not null		増分+1	
+	mail列 varchar2(35) not null
+	tel列  varchar2(13)
+	address列 varchar2(30) 
+	date列 date default sysdate
+
+inquiry表
+	inqno列 number(4) 外部キー privacy.seqno
+	title列 varchar2(20) 
+	content列 varchar2()
+	 
