@@ -178,6 +178,16 @@ li a:hover {
     color: #fff;
 }
 
+.desc p{
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.desc a {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
 /* price_list main */
 main{
     background-color: rgb(247, 255, 255);
